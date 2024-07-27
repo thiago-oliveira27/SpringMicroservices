@@ -8,10 +8,10 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.devsuperior</groupId>
+	<groupId>com.spring.ms</groupId>
 	<artifactId>hr-payroll</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hr-worker</name>
+	<name>hr-payroll</name>
 	<description>Payroll Microservice</description>
 
 	<properties>
