@@ -1,4 +1,4 @@
-//package com.spring.mongo;
+//package com.spring.ms;
 //
 //import org.junit.jupiter.api.Test;
 //import org.springframework.boot.test.context.SpringBootTest;
