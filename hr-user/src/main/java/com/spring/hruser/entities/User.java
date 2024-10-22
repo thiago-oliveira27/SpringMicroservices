@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -25,6 +26,8 @@ public class User implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@Column(unique = true)
 	private String email;
 	private String name;
 	private String password;
@@ -35,6 +38,8 @@ public class User implements Serializable{
 			   inverseJoinColumns = @JoinColumn(name="role_id")
 	)
 	private Set<Role> roles = new HashSet<>();
+	
+	public User() {}
 	
 	public User(Long id, String email, String name, String password) {
 		super();
